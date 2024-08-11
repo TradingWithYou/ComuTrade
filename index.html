@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoBank - Community Trading for Collective Success</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <nav id="nav-menu">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#how-it-works">How It Works</a></li>
+                    <li><a href="#leverage">Leverage</a></li>
+                    <li><a href="#risk-management">Risk Management</a></li>
+                    <li><a href="#trading-strategy">Trading Strategy</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-text">
+                <h2>Empower Your Finances with Community-Based Trading</h2>
+                <p>Leverage collective investment power for consistent weekly profits, driven by our expert trading strategies.</p>
+                <a href="#about-us" class="cta-btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="features">
+        <div class="container">
+            <h2>How It Works</h2>
+            <p>Discover how our community-driven trading system operates to deliver consistent profits every week.</p>
+            <div class="feature-grid">
+                <div class="feature">
+                    <h3><a href="#pooling-funds">Pooling Funds</a></h3>
+                    <p>Members pool their resources into a shared fund, enabling larger trades and maximizing potential returns. <a href="#pooling-funds-details">Learn more</a>.</p>
+                </div>
+                <div class="feature">
+                    <h3><a href="#weekly-profit-plan">Weekly Profit Plan</a></h3>
+                    <p>Utilize pooled funds for trading with a profit target ranging from 7% to 20% per week. <a href="#weekly-profit-plan-details">Discover how</a>.</p>
+                </div>
+                <div class="feature">
+                    <h3><a href="#profit-withdrawal">Profit Withdrawal</a></h3>
+                    <p>Profits are available for withdrawal every Friday at 11am UK time. Deposits are locked in every Sunday at 10pm UK time. <a href="#profit-withdrawal-details">Read more</a>.</p>
+                </div>
+                <div class="feature">
+                    <h3><a href="#community-driven">Community-Driven</a></h3>
+                    <p>Our platform thrives on community engagement and feedback, ensuring shared success. <a href="#community-driven-details">Explore our community</a>.</p>
+                </div>
+                <div class="feature">
+                    <h3><a href="#leverage">Leverage</a></h3>
+                    <p>Leverage amplifies returns by using borrowed capital. Learn how we use leverage to enhance your profits. <a href="#leverage-details">Find out more</a>.</p>
+                </div>
+                <div class="feature">
+                    <h3><a href="#security">Security Measures</a></h3>
+                    <p>We prioritize security with robust measures and transparent practices. <a href="#security-details">See how we protect you</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dynamic Contributions and Profit Section -->
+    <section id="dynamic" class="dynamic">
+        <div class="container">
+            <h2>Calculate Your Potential Profit</h2>
+            <p>Use the tool below to see how your contribution and profit target affect your weekly earnings.</p>
+
+            <div class="input-group">
+                <label for="total-pot">Select Total Pot Amount:</label>
+                <select id="total-pot">
+                    <option value="10000">10,000</option>
+                    <option value="25000">25,000</option>
+                    <option value="50000">50,000</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="user-contribution">Your Contribution Amount ($):</label>
+                <input type="number" id="user-contribution" value="1000" min="100">
+            </div>
+
+            <div class="slider-container">
+                <label for="profit-slider">Adjust Profit Target (%):</label>
+                <input type="range" id="profit-slider" min="7" max="20" step="0.1" value="10">
+                <div class="slider-info">
+                    <span id="profit-value">10%</span>
+                </div>
+            </div>
+
+            <div id="profit-breakdown">
+                <p>Total Pot: $<span id="total-pot-value">10000</span></p>
+                <p>Your Contribution: $<span id="user-contribution-value">1000</span></p>
+                <p>Your Share of Weekly Profit: $<span id="profit-share">0.00</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leverage Section -->
+    <section id="leverage" class="leverage">
+        <div class="container">
+            <h2>Understanding Leverage</h2>
+            <p>Leverage allows you to control a larger position with a smaller amount of capital. For instance, with 5x leverage, you can control $5,000 worth of assets with just $1,000 of your own money. This magnifies potential returns but also increases risk.</p>
+            <p>We use leverage strategically to amplify returns while managing risk effectively. By leveraging capital responsibly, we aim to achieve substantial profits while minimizing exposure to potential losses.</p>
+            <p><a href="#risk-management">Learn more about our approach to leverage and how we manage risk effectively</a>.</p>
+        </div>
+    </section>
+
+    <!-- Risk Management Section -->
+    <section id="risk-management" class="risk-management">
+        <div class="container">
+            <h2>Robust Risk Management</h2>
+            <p>Our risk management system is designed to protect your investment while maximizing potential returns. Key elements include:</p>
+            <ul>
+                <li><strong>Margin Allocation:</strong> We allocate only 10% of the total pot as the margin for trades. This margin covers potential losses, protecting the remaining funds.</li>
+                <li><strong>Stop-Loss Orders:</strong> Stop-loss orders are used to automatically exit trades at a predetermined level, minimizing losses if the market moves against us.</li>
+                <li><strong>Take-Profit Orders:</strong> Take-profit orders secure gains by automatically closing trades when a target price is reached, ensuring profits are realized.</li>
+                <li><strong>Diversification:</strong> We diversify investments across different assets and strategies to spread risk and reduce the impact of any single trade.</li>
+                <li><strong>Continuous Monitoring:</strong> Our team continuously monitors market conditions and adjusts strategies as needed to maintain effective risk management.</li>
+            </ul>
+            <p>Our comprehensive risk management approach ensures that while we seek high returns, your investment is protected against significant losses. <a href="#trading-strategy">Explore our trading strategies</a> to see how these practices are integrated into our overall approach.</p>
+        </div>
+    </section>
+
+    <!-- Trading Strategy Section -->
+    <section id="trading-strategy" class="trading-strategy">
+        <div class="container">
+            <h2>Our Trading Strategy</h2>
+            <p>Our trading strategy combines several sophisticated techniques to achieve optimal outcomes:</p>
+            <ul>
+                <li><strong>Technical Analysis:</strong> We analyze price charts and indicators to identify trends and potential trading opportunities.</li>
+                <li><strong>Fundamental Analysis:</strong> Economic and financial factors are evaluated to inform trading decisions and predict asset movements.</li>
+                <li><strong>Market Sentiment:</strong> We gauge investor sentiment to anticipate market movements and adjust our strategy accordingly.</li>
+                <li><strong>Algorithmic Trading:</strong> Algorithms are used for precise trade execution, minimizing human error and optimizing trade efficiency.</li>
+            </ul>
+            <p>Our strategy is continuously refined to adapt to changing market conditions and to optimize performance. <a href="#about-us">Learn more about our team</a> and their expertise in crafting these strategies.</p>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about-us" class="about-us">
+        <div class="container">
+            <h2>About CryptoBank</h2>
+            <p>CryptoBank is a community-driven trading platform designed to leverage collective investment power for substantial weekly profits. With a minimum deposit of $100, you can join our community and benefit from our expert trading strategies.</p>
+            <p>Funds are locked in every Sunday at 10pm UK time to calculate the weekly trading pot. Trading occurs from Monday to Friday, with withdrawals available from Friday at 11am until Sunday at 9:30am UK time.</p>
+            <p>Join us to experience a new way of growing your wealth through collaborative trading. <a href="#contact">Contact us</a> to get started today.</p>
+        </div>
+    </section>
+
+    <!-- Security Section -->
+    <section id="security" class="security">
+        <div class="container">
+            <h2>Security First</h2>
+            <p>Your funds' safety is our top priority. We use advanced encryption, cold storage, and multi-layered authentication to ensure your investments are secure.</p>
+            <p>We maintain transparency by providing full visibility into all trades and fund movements, so you can trust that your money is handled with integrity and care.</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#how-it-works">How It Works</a>
+                <a href="#leverage">Leverage</a>
+                <a href="#risk-management">Risk Management</a>
+                <a href="#trading-strategy">Trading Strategy</a>
+                <a href="#about-us">About Us</a>
+                <a href="#contact">Contact Us</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <div class="social-media">
+                <a href="#"><img src="https://example.com/twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="https://example.com/linkedin-icon.png" alt="LinkedIn"></a>
+                <a href="#"><img src="https://example.com/facebook-icon.png" alt="Facebook"></a>
+            </div>
+            <p>&copy; 2024 CryptoBank. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

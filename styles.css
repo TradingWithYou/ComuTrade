@@ -1,0 +1,283 @@
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+    background: #f5f5f5;
+}
+
+/* Header */
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-menu {
+    display: flex;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background: #004085; /* Darker blue for a bold look */
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    border-bottom: 5px solid #007bff; /* Bottom border for separation */
+}
+
+.hero-text {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.hero-buttons {
+    margin-top: 20px;
+}
+
+.cta-btn {
+    background-color: #28a745;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn.secondary {
+    background-color: #17a2b8;
+}
+
+.cta-btn:hover {
+    background-color: #218838; /* Slightly darker green for hover */
+}
+
+/* Features Section */
+.features {
+    padding: 50px 20px;
+    background: #e9ecef; /* Light grey for a soft background */
+    border-top: 5px solid #007bff; /* Top border for separation */
+    text-align: center; /* Centered text */
+}
+
+.feature-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Centering items */
+}
+
+.feature {
+    flex: 1;
+    min-width: 250px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    border-left: 5px solid #28a745; /* Left border for individual feature boxes */
+    transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+}
+
+.feature:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Enhanced shadow on hover */
+}
+
+.feature h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.feature a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.feature a:hover {
+    text-decoration: underline;
+}
+
+/* Dynamic Section */
+.dynamic {
+    background: #f4f4f4; /* Light grey background for contrast */
+    padding: 50px 20px;
+    border-top: 5px solid #17a2b8; /* Top border for differentiation */
+    text-align: center; /* Centered text */
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+input[type="number"], select {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.slider-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.slider-info {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+#profit-breakdown {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+/* Leverage Section */
+.leverage {
+    background: #f8f9fa; /* Very light grey for a clean look */
+    padding: 50px 20px;
+    border-top: 5px solid #007bff; /* Top border for separation */
+    text-align: center; /* Centered text */
+}
+
+.leverage h2 {
+    color: #007bff;
+}
+
+/* Risk Management Section */
+.risk-management {
+    background: #fff; /* White background for clarity */
+    padding: 50px 20px;
+    border-top: 5px solid #28a745; /* Top border for separation */
+    text-align: center; /* Centered text */
+}
+
+.risk-management h2 {
+    color: #28a745;
+}
+
+ul {
+    list-style: disc;
+    padding-left: 20px;
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+/* Trading Strategy Section */
+.trading-strategy {
+    background: #e9ecef; /* Light grey background for consistency */
+    padding: 50px 20px;
+    border-top: 5px solid #17a2b8; /* Top border for differentiation */
+    text-align: center; /* Centered text */
+}
+
+.trading-strategy h2 {
+    color: #17a2b8;
+}
+
+/* About Us Section */
+.about-us {
+    background: #f4f4f4; /* Light grey background for contrast */
+    padding: 50px 20px;
+    border-top: 5px solid #007bff; /* Top border for differentiation */
+    text-align: center; /* Centered text */
+}
+
+.about-us h2 {
+    color: #007bff;
+}
+
+/* Security Section */
+.security {
+    background: #fff; /* White background for clarity */
+    padding: 50px 20px;
+    border-top: 5px solid #28a745; /* Top border for consistency */
+    text-align: center; /* Centered text */
+}
+
+.security h2 {
+    color: #28a745;
+}
+
+/* Footer Section */
+footer {
+    background: #007bff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-links {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.3s ease; /* Smooth opacity transition */
+}
+
+.social-media a:hover img {
+    opacity: 0.8; /* Slight opacity change on hover */
+}
